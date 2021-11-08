@@ -1,0 +1,53 @@
+@mixin common {
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  height: 550px;
+  width: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 20px 20px 15px rgb(37, 37, 37);
+  .first-row {
+    height: 240px;
+    // background-color: white;
+    @include common;
+    .icon-main {
+      font-size: 9rem;
+      padding-bottom: 10px;
+    }
+  }
+  .second-row {
+    height: 190px;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    .bg-teal {
+      background-color: rgb(117, 209, 209);
+      height: 190px;
+      padding-top: 35px;
+      margin-left: 0px;
+      padding-right: 0px;
+      p {
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+  }
+  .third-row {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    @include common;
+    // align-items: stretch;
+  }
+}
+.icon-bottom {
+  display: flex;
+  align-items: center;
+  .render-bi {
+    font-size: 45px;
+    color: rgb(117, 209, 209);
+  }
+}
